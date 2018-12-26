@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Hello World!</title>
+    <link rel="stylesheet" href="node_modules/xel/themes/material.css">
+    <link rel="stylesheet" href="node_modules/x-chrome-tabs/src/css/base.min.css" />
+    <link rel="stylesheet" href="node_modules/x-chrome-tabs/src/css/dark.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+SC|Roboto|Roboto+Mono&amp;subset=chinese-simplified" rel="stylesheet">
+    <script src="src/jquery-3.3.1.min.js"></script>
+    <script src="node_modules/xel/xel.min.js"></script>
+  </head>
+  <body>
+    <div class="bar" style="position: absolute; width: 100%; height: 38px;">
+      <div style="position: absolute; width: 100%">
+      <x-menubar>
+        <x-menuitem class="menu">
+          <x-label>File</x-label>
+          <x-menu>
+            <x-menuitem  id="new_tab">
+              <x-label>New</x-label>
+              <x-shortcut value="Control+N"></x-shortcut>
+            </x-menuitem>
+
+            <x-menuitem id="open">
+              <x-label>Open…</x-label>
+              <x-shortcut value="Control+O"></x-shortcut>
+            </x-menuitem>
+
+            <hr>
+
+            <x-menuitem id="save">
+              <x-label>Save</x-label>
+              <x-shortcut value="Control+S"></x-shortcut>
+            </x-menuitem>
+
+            <x-menuitem id="save_as">
+              <x-label>Save as…</x-label>
+              <x-shortcut value="Control+Shift+S"></x-shortcut>
+            </x-menuitem>
+
+            <hr>
+
+            <x-menuitem id="close_tab">
+              <x-label>Close</x-label>
+              <x-shortcut value="Control+W"></x-shortcut>
+            </x-menuitem>
+
+            <x-menuitem id="quit" class="quit">
+              <x-label>Quit</x-label>
+              <x-shortcut value="Control+Q"></x-shortcut>
+            </x-menuitem>
+          </x-menu>
+        </x-menuitem>
+
+        <x-menuitem class="menu">
+          <x-label>Edit</x-label>
+          <x-menu>
+            <x-menuitem>
+              <x-icon name="undo"></x-icon>
+              <x-label>Undo</x-label>
+              <x-shortcut value="Control+Z"></x-shortcut>
+            </x-menuitem>
+
+            <x-menuitem>
+              <x-icon name="redo"></x-icon>
+              <x-label>Redo</x-label>
+              <x-shortcut value="Control+Shift+Z"></x-shortcut>
+            </x-menuitem>
+
+            <hr>
+
+            <x-menuitem>
+              <x-icon name="content-cut"></x-icon>
+              <x-label>Cut</x-label>
+              <x-shortcut value="Control+X"></x-shortcut>
+            </x-menuitem>
+
+            <x-menuitem>
+              <x-icon name="content-copy"></x-icon>
+              <x-label>Copy</x-label>
+              <x-shortcut value="Control+C"></x-shortcut>
+            </x-menuitem>
+
+            <x-menuitem>
+              <x-icon name="content-paste"></x-icon>
+              <x-label>Paste</x-label>
+              <x-shortcut value="Control+V"></x-shortcut>
+            </x-menuitem>
+
+            <hr>
+
+            <x-menuitem>
+              <x-icon></x-icon>
+              <x-label>Select all</x-label>
+              <x-shortcut value="Control+A"></x-shortcut>
+            </x-menuitem>
+          </x-menu>
+        </x-menuitem>
+      </x-menubar>
+      </div>
+      <div class="menu", style="position: absolute; right: 10px; top: 5px;">
+        <x-icon name="close" class="quit"></x-icon>
+      </div>
+    </div>
+    <div class="content", style="position: absolute; top: 38px; width: 100%;">
+      <div class="chrome-tabs"></div>
+    </div>
+    <div class="side_bar">
+    </div>
+    <script src="src/index.js"></script>
+  </body>
+</html>

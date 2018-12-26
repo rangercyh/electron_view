@@ -1,0 +1,31 @@
+html {
+  margin: 0px;
+  padding: 0px;
+  overflow: hidden;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+.bar {
+  -webkit-app-region: drag;
+  -webkit-user-select: none;
+}
+.menu {
+  -webkit-app-region: no-drag;
+}
+
+
+.chrome-tabs .chrome-tab {
+  width: 243px
+}
+
+.chrome-tabs .chrome-tab:nth-child(1) {
+  transform: translate3d(0px, 0, 0)
+}
+
+.chrome-tabs .chrome-tab:nth-child(2) {
+  transform: translate3d(229px, 0, 0)
+}

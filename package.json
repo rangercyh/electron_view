@@ -1,0 +1,28 @@
+{
+  "name": "tools",
+  "version": "0.1.0",
+  "description": "none",
+  "main": "src/main.js",
+  "postinstall": "electron-builder install-app-deps",
+  "scripts": {
+    "start": "electron .",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder"
+  },
+  "author": "caiyiheng <rangercyh@qq.com> (https://github.com/rangercyh)",
+  "license": "ISC",
+  "devDependencies": {},
+  "dependencies": {
+    "electron": "^4.0.0",
+    "x-chrome-tabs": "^1.0.5",
+    "xel": "0.0.186"
+  },
+  "build": {
+    "appId": "tools",
+    "productName": "link start",
+    "copyright": "Copyright © year ${author}",
+    "win": {
+      "target": "portable"
+    }
+  }
+}
