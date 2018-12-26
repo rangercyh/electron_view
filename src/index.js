@@ -21,6 +21,6 @@ $(document).ready(() => {
 
     // menu
     $(".quit").on("click", function() {
-        ipcRenderer.sendSync('close-win')
+        ipcRenderer.send('close-win')
     })
 })

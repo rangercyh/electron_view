@@ -53,7 +53,7 @@ app.on('activate', () => {
 // 也可以拆分成几个文件，然后用 require 导入。
 
 const { ipcMain } = require('electron')
-ipcMain.on('close-win', (e, a) => {
+ipcMain.once('close-win', (e, a) => {
     console.log('quit')
     app.quit()
 })
